@@ -1,0 +1,75 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    tools:context="com.fro.ble_smokecase.MainActivity" >
+
+    <!-- 左 -->
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:layout_margin="20dp"
+        android:orientation="vertical" >
+
+        <ToggleButton
+            android:id="@+id/scan_tb"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textOff="开始扫描"
+            android:textOn="停止扫描"
+            android:background="@drawable/bg_button" />
+
+        <ListView
+            android:id="@+id/bleDev_lv"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" >
+        </ListView>
+
+        <TextView
+            android:id="@+id/info_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="提示信息栏"
+            android:textColor="#ff00ff00"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <!-- 右 -->
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:layout_margin="20dp"
+        android:orientation="vertical" >
+
+        <!-- 接收区 -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="烟雾" />
+
+            <TextView
+                android:id="@+id/recv_tv"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="- -" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

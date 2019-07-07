@@ -1,0 +1,178 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    tools:context="com.fro.ble_digtubecase.MainActivity" >
+
+    <!-- 左 -->
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_margin="20dp"
+        android:layout_weight="1"
+        android:orientation="vertical" >
+
+        <ToggleButton
+            android:id="@+id/scan_tb"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_button"
+            android:textOff="开始扫描"
+            android:textOn="停止扫描" />
+
+        <ListView
+            android:id="@+id/bleDev_lv"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" >
+        </ListView>
+
+        <TextView
+            android:id="@+id/info_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="提示信息栏"
+            android:textColor="#ff00ff00"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <!-- 右 -->
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_margin="20dp"
+        android:layout_weight="1"
+        android:orientation="vertical" >
+
+        <!-- 接收区 -->
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="数码管" />
+
+                <Button
+                    android:id="@+id/oneBtn"
+                    android:layout_width="100dp"
+                    android:layout_height="45dp"
+                    android:layout_gravity="center"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/bg_button"
+                    android:text="1" />
+
+                <Button
+                    android:id="@+id/twoBtn"
+                    android:layout_width="100dp"
+                    android:layout_height="45dp"
+                    android:layout_gravity="center"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/bg_button"
+                    android:text="2" />
+
+                <Button
+                    android:id="@+id/threeBtn"
+                    android:layout_width="100dp"
+                    android:layout_height="45dp"
+                    android:layout_gravity="center"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/bg_button"
+                    android:text="3" />
+
+                <Button
+                    android:id="@+id/fourBtn"
+                    android:layout_width="100dp"
+                    android:layout_height="45dp"
+                    android:layout_gravity="center"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/bg_button"
+                    android:text="4" />
+
+                <Button
+                    android:id="@+id/fiveBtn"
+                    android:layout_width="100dp"
+                    android:layout_height="45dp"
+                    android:layout_gravity="center"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/bg_button"
+                    android:text="5" />
+
+                <Button
+                    android:id="@+id/sixBtn"
+                    android:layout_width="100dp"
+                    android:layout_height="45dp"
+                    android:layout_gravity="center"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/bg_button"
+                    android:text="6" />
+
+                <Button
+                    android:id="@+id/sevenBtn"
+                    android:layout_width="100dp"
+                    android:layout_height="45dp"
+                    android:layout_gravity="center"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/bg_button"
+                    android:text="7" />
+
+                <Button
+                    android:id="@+id/eightBtn"
+                    android:layout_width="100dp"
+                    android:layout_height="45dp"
+                    android:layout_gravity="center"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/bg_button"
+                    android:text="8" />
+
+                <Button
+                    android:id="@+id/nineBtn"
+                    android:layout_width="100dp"
+                    android:layout_height="45dp"
+                    android:layout_gravity="center"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/bg_button"
+                    android:text="9" />
+
+                <Button
+                    android:id="@+id/zeroBtn"
+                    android:layout_width="100dp"
+                    android:layout_height="45dp"
+                    android:layout_gravity="center"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/bg_button"
+                    android:text="0" />
+
+                <Button
+                    android:id="@+id/pointBtn"
+                    android:layout_width="100dp"
+                    android:layout_height="45dp"
+                    android:layout_gravity="center"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/bg_button"
+                    android:text="." />
+
+                <TextView
+                    android:id="@+id/recv_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="- -" />
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+</LinearLayout>
